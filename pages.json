@@ -1,0 +1,864 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+    	"path": "pages/login/index",
+    	"style": {
+    		"navigationStyle": "custom",
+    		"app-plus": {
+    			"scrollIndicator": "none" //当前页面不显示滚动条
+    		}
+    	}
+    },
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "机场运行协同",
+				"app-plus": {
+					"scrollIndicator": "none" //当前页面不显示滚动条
+				}
+			}
+		},
+		{
+			"path": "pages/flight/index",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+					"scrollIndicator": "none",
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/flight/epidemic-input-number",
+			"style": {
+				"navigationBarTitleText": "疫情人数录入",
+				"app-plus": {
+					"scrollIndicator": "none",
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/flight/flight-message",
+			"style": {
+				"navigationBarTitleText": "航班详情",
+				"navigationBarTextStyle": "white"
+			}
+		},
+    {
+    	"path": "pages/flight/passengerEnter",
+    	"style": {
+    		"navigationBarTitleText": "客货邮录入",
+    		"navigationBarTextStyle": "white"
+    	}
+    },
+		{
+			"path": "pages/search/index",
+			"style": {
+				"navigationBarTitleText": "查询",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/search/searchResult",
+			"style": {
+				"navigationBarTitleText": "查询结果",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/follow/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "关注",
+				"onReachBottomDistance": 50,
+        "enablePullDownRefresh": true,
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},
+    {
+    	"path": "pages/follow/follow-setting",
+    	"style": {
+    		"navigationBarTitleText": "航班关注设置",
+    		"app-plus": {
+    			"scrollIndicator": "none"
+    		}
+    	}
+    },
+		{
+			"path": "pages/tasks/index",
+			"style": {
+				"navigationBarTitleText": "任务",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh":true,
+				"app-plus": {
+					"scrollIndicator": "none",
+					"bounce": "none"
+				}
+			}
+		},
+    // {
+    // 	"path": "pages/tasks/monitor-flight",
+    // 	"style": {
+    // 		"navigationStyle": "custom",
+    // 		"enablePullDownRefresh":true,
+    // 		"app-plus": {
+    // 			"scrollIndicator": "none",
+    // 			"bounce": "none"
+    // 		}
+    // 	}
+    // },
+    {
+    	"path": "pages/tasks/monitor-flight",
+    	"style": {
+    		"navigationStyle": "custom",
+    		"enablePullDownRefresh":false,
+    		"app-plus": {
+    			"scrollIndicator": "none",
+    			"bounce": "none"
+    		}
+    	}
+    },
+    {
+    	"path": "pages/e-service/index",
+    	"style": {
+    		"navigationBarTitleText": "电子服务确认单签署"
+    	}
+    },
+    {
+    	"path": "pages/e-service/flight",
+    	"style": {
+    		// "navigationBarTitleText": "航班",
+    		"navigationStyle": "custom",
+    		// "disableScroll": true, 
+    		"app-plus": {
+    			"scrollIndicator": "none",
+    			"bounce": "none"
+    		}
+    	}
+    },
+    {
+    	"path": "pages/e-service/airline",
+    	"style": {
+    		// "navigationBarTitleText": "航班",
+    		"navigationStyle": "custom",
+    		// "disableScroll": true, 
+    		"app-plus": {
+    			"scrollIndicator": "none",
+    			"bounce": "none"
+    		}
+    	}
+    },
+		{
+			"path": "pages/e-service/sign",
+			"style": {
+				"navigationBarTitleText": "签名"
+				// "navigationStyle": "custom"
+			}
+		},
+    {
+    	"path": "pages/e-service/signExtend",
+    	"style": {
+    		"navigationBarTitleText": "签名"
+    		// "navigationStyle": "custom"
+    	}
+    },
+    {
+    	"path": "pages/e-service/index",
+    	"style": {
+    		"navigationBarTitleText": "电子服务确认单签署"
+    		// "navigationStyle": "custom"
+    	}
+    },
+    {
+    	"path": "pages/e-service/transfer",
+    	"style": {
+    		"navigationBarTitleText": "服务项维护"
+    	}
+    },
+		{
+			"path": "pages/message/index",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+					"scrollIndicator": "none",
+					"bounce": "none",
+					"softinputMode": "adjustResize"
+				}
+			}
+		},
+		{
+			"path": "pages/message/addressList",
+			"style": {
+				// "navigationBarTitleText": "通讯录"
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/message/chat",
+			"style": {
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"scrollIndicator": "none",
+					"bounce": "none",
+					"softinputMode": "adjustResize"
+				}
+			}
+		},
+		{
+			"path": "pages/message/groupChat",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom",
+				"app-plus": {
+					"scrollIndicator": "none",
+					"bounce": "none",
+					"softinputMode": "adjustResize"
+				}
+			}
+		},
+		{
+			"path": "pages/message/groupInfo",
+			"style": {
+				// "navigationBarTitleText": "聊天设置",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/message/groupUser",
+			"style": {
+				// "navigationBarTitleText": "查看群成员",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/message/subscribe",
+			"style": {
+				"enablePullDownRefresh": true
+				// "navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/message/selectFriend",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/my/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/my/edit-password",
+			"style": {
+				"navigationBarTitleText": "修改密码"
+			}
+		},
+		{
+			"path": "pages/login/update",
+			"style": {
+				"navigationBarTitleText": "应用更新"
+			}
+		},
+		{
+			"path": "pages/my/auth-setting",
+			"style": {
+				"navigationBarTitleText": "面容/指纹设置"
+			}
+		},
+		{
+			"path": "pages/acdmHome/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "ACDM",
+				"navigationBarTextStyle": "white"
+			}
+		},
+    {
+    	"path": "pages/check-net/index",
+    	"style": {
+        "navigationStyle": "custom",
+    		"navigationBarTitleText": "检查网络"
+    	}
+    },
+		{
+			"path": "pages/trailer/index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/trailer/graph",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/guideCar/index",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+					"scrollIndicator": "none",
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/ferry/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "拼接航班",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"scrollIndicator": "none",
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/ferry/tempJump",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "临时跳转"
+			}
+		},
+		//地勤无纸化-首页
+		{
+			"path": "pages/cargo/index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-首页-操作过的运输单详情
+			"path": "pages/cargo/details",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-出港 货站出库
+			"path": "pages/cargo/leaveport/out-stock",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-出港 货站出库选择
+			"path": "pages/cargo/leaveport/out-stock-sort",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-出港 出库截关
+			"path": "pages/cargo/leaveport/out-stock-closeoff",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-出港 出库截关-集装器列表页面
+			"path": "pages/cargo/leaveport/out-stock-closeoff-containers",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-出港 出库截关-集装器列表版本显示页面
+			"path": "pages/cargo/leaveport/out-stock-closeoff-containers-version",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-出港 出库截关-消息页面
+			"path": "pages/cargo/leaveport/out-stock-closeoff-bell-page",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-出港 出库截关-版本比对
+			"path": "pages/cargo/leaveport/landscape-comparison",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-出港 国际转国内
+			"path": "pages/cargo/leaveport/int-to-dom",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-出港 装卸接收
+			"path": "pages/cargo/leaveport/load-receive",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化 装卸接收 操作记录
+			"path": "pages/cargo/operation-history",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-出港 交接运往待运区（装卸接收)
+			"path": "pages/cargo/leaveport/to-waiting-area-stevedoring",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-出港 交接运往待运区（拖车司机)
+			"path": "pages/cargo/leaveport/to-waiting-area-driver",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-出港 确认到达待运区（拖车司机)
+			"path": "pages/cargo/leaveport/arrive-waiting-area-driver",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-出港 交接运往机位（装卸押运)
+			"path": "pages/cargo/leaveport/to-aircraft-stevedoring",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-出港 交接运往机位（拖车司机)
+			"path": "pages/cargo/leaveport/to-aircraft-driver",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-出港 到达机位交接
+			"path": "pages/cargo/leaveport/arrive-aircraft",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-出港 货物分舱
+			"path": "pages/cargo/leaveport/sub-cabin",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-出港 装机确认
+			"path": "pages/cargo/leaveport/installed-confirm",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-出港 装机稽核
+			"path": "pages/cargo/leaveport/installed-audit",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-出港 装机单搜索
+			"path": "pages/cargo/leaveport/uploader-install-search",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-出港 装机单比对
+			"path": "pages/cargo/landscape-comparison",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-出港 异常入库
+			"path": "pages/cargo/leaveport/abnormal-warehouse",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		// 地勤无纸化-进港
+		{
+			// 地勤无纸化-进港 卸机
+			"path": "pages/cargo/enterport/unloading",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-进港 交接运往待运区(板箱)
+			"path": "pages/cargo/enterport/unloading-plate-box",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-进港 交接运往待运区(装卸接收)
+			"path": "pages/cargo/enterport/to-waiting-area-stevedoring",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-进港 交接运往待运区(拖车司机)
+			"path": "pages/cargo/enterport/to-waiting-area-driver",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-进港 到达待运区交接
+			"path": "pages/cargo/enterport/arrive-waiting-area",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-进港 到达货站
+			"path": "pages/cargo/enterport/arrive-cargo-station",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-进港 货站入库
+			"path": "pages/cargo/enterport/ware-house",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-进港 交接运往货站(拖车司机)
+			"path": "pages/cargo/enterport/to-cargo-station-driver",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-进港 交接运往货站(装卸接收)
+			"path": "pages/cargo/enterport/to-cargo-station-stevedoring",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-进港 卸机单查询
+			"path": "pages/cargo/enterport/loader-uninstall-search",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-拉下货物 拉下确认
+			"path": "pages/cargo/pulldown/pulldown-confirm",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-拉下货物 拉下确认-选择 航班列表
+			"path": "pages/cargo/pulldown/pulldown-confirm-box",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-拉下货物 拉下确认-选择 航班列表
+			"path": "pages/cargo/pulldown/pulldown-confirm-sort",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-拉下货物 拉下确认-备注信息输入
+			"path": "pages/cargo/pulldown/pulldown-confirm-input-remark",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-拉下货物 拉下确认-备注信息输入
+			"path": "pages/cargo/costly/costly-input-remark",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-拉下货物 交接运往待运区（装卸接收）
+			"path": "pages/cargo/pulldown/to-waiting-area-stevedoring",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-拉下货物 到达待运区
+			"path": "pages/cargo/pulldown/arrive-waiting-area",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-拉下货物 交接运往货站（装卸接收）
+			"path": "pages/cargo/pulldown/to-cargo-station-stevedoring",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-拉下货物 交接运往货站（拖车司机）
+			"path": "pages/cargo/pulldown/to-cargo-station-driver",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-拉下货物 到达货站
+			"path": "pages/cargo/pulldown/arrive-cargo-station",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-拉下货物 货站接收
+			"path": "pages/cargo/pulldown/ware-house",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-拉下货物 拉下查询 配载
+			"path": "pages/cargo/pulldown/pulldown-distribution-search",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-拉下货物 拉下查询 装卸接收 司机
+			"path": "pages/cargo/pulldown/pulldown-transfer-search",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-拉下货物 拉下查询 货站
+			"path": "pages/cargo/pulldown/pulldown-warehouse-search",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 监控视图-装卸Z5站坪监控视图
+			"path": "pages/cargo/monitor/load-receive",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 监控视图-进出港监控视图航班界面
+			"path": "pages/cargo/monitor/leave-enter-port-flight",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 监控视图-新航班详情页面
+			"path": "pages/cargo/monitor/leave-enter-port-detail",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 监控视图-新时间线页面
+			"path": "pages/cargo/monitor/time-line-page",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		// {
+		// 	// 监控视图-出港监控视图
+		// 	"path": "pages/cargo/monitor/leaveport",
+		// 	"style": {
+		// 		"navigationStyle": "custom"
+		// 	}
+		// },
+		// {
+		// 	// 监控视图-进港监控视图
+		// 	"path": "pages/cargo/monitor/enterport",
+		// 	"style": {
+		// 		"navigationStyle": "custom"
+		// 	}
+		// },
+		{
+			// 地勤无纸化-进港 卸机
+			"path": "pages/cargo/enterport/unloading",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 贵货及危险品 卸机
+			"path": "pages/cargo/costly/unloading",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 贵货及危险品 卸机
+			"path": "pages/cargo/costly/unloading-plate-box",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-进港 交接运往货站(装卸接收)
+			"path": "pages/cargo/costly/to-cargo-station-stevedoring",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-拉下货物 到达货站
+			"path": "pages/cargo/costly/arrive-cargo-station",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化-拉下货物 货站接收
+			"path": "pages/cargo/costly/ware-house",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 地勤无纸化 选择页面
+			"path": "pages/cargo/sort-page",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 时间线
+			"path": "pages/cargo/pulldown/timeline-page",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		// 空集装器需求
+		{
+			// 空集装器需求主页
+			"path": "pages/emptyContainer/index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 航班空集装器需求
+			"path": "pages/emptyContainer/airline",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 航班空集装器需求
+			"path": "pages/emptyContainer/airline-form",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 货站空集装器需求
+			"path": "pages/emptyContainer/warehouse",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 货站空集装器需求
+			"path": "pages/emptyContainer/warehouse-form",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 货站空集装器需求
+			"path": "pages/emptyContainer/check",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 货站空集装器需求
+			"path": "pages/emptyContainer/check-form",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			// 货站空集装器需求
+			"path": "pages/cargo/transition",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarBackgroundColor": "#1891ff",
+		"backgroundColor": "#f1f1f1",
+		"navigationBarTextStyle": "white",
+		"onReachBottomDistance": 100
+	},
+	"tabBar": {
+		"color": "#8a8396",
+		"selectedColor": "#2a4c7e",
+		"borderStyle": "black",
+		"backgroundColor": "#fff",
+		"list": [{
+				"pagePath": "pages/flight/index",
+				"iconPath": "static/ic_depart.png",
+				"selectedIconPath": "static/ic_depart_focus.png",
+				"text": "航班"
+			},
+			{
+				"pagePath": "pages/follow/index",
+				"iconPath": "static/ic_collection.png",
+				"selectedIconPath": "static/ic_collection_focus.png",
+				"text": "关注"
+			},
+			{
+				"pagePath": "pages/tasks/index",
+				"iconPath": "static/ic_task.png",
+				"selectedIconPath": "static/ic_task_focus.png",
+				"text": "任务"
+			},
+			{
+				"pagePath": "pages/message/index",
+				"iconPath": "static/ic_im_normal.png",
+				"selectedIconPath": "static/ic_im_focus.png",
+				"text": "消息"
+			}
+		]
+	}
+}
